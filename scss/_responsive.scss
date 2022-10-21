@@ -1,0 +1,277 @@
+// **********************************header******************************
+.header {
+    @media (max-width:1500px) {
+        width: 90%;
+    }
+
+    @media (max-width:1360px) {
+        width: 95%;
+    }
+
+    @media (max-width:576px) {
+        width: 100%;
+    }
+    @media (max-width:400px) {
+        width: 100%;
+    }
+
+    @media (max-width:600px) {
+        width: 100%;
+    }
+}
+@media (max-width:400px) {
+    .respon{
+        margin-top: -5rem;
+        margin-left:.1rem;
+    }
+}
+
+
+@media (max-width:960px) {
+
+    .header-navbar-logo {
+        margin-top: -3rem;
+        margin-right: -5.5rem;
+    }
+
+    .header-content {
+        top: 2rem;
+
+        .online-order p {
+            @include text(1.5rem, 600);
+        }
+
+        .address-box input {
+            width: 18rem;
+        }
+
+        .icon-2 {
+            margin-right: -1.8rem;
+        }
+
+        .animation {
+            left: -6rem;
+            top: -1.9rem;
+
+            .moving {
+                height: 1.9rem;
+            }
+
+            .moving .item-move {
+                @include text(1.5rem, 600);
+                animation: item-show 6s cubic-bezier(.64, .57, .67, .53) 0s infinite normal both;
+
+            }
+        }
+
+        .sub-title {
+            // margin-right: -11rem;
+            margin-top: -1rem;
+        }
+
+    }
+
+    .header-menu {
+        overflow-x: scroll;
+        @media (max-width:900px) {
+            width: 90%;
+        }
+    }
+}
+// **************************categories***************************
+@media (max-width:1500px) {
+    .section-food {
+        width: 16%;
+        min-width: 11rem;
+    }
+}
+
+@media (max-width:1280px) {
+    .section-food {
+        width: 25%;
+        min-width: 9rem;
+    }
+}
+
+@media (max-width:960px) {
+    .section-food {
+        width: 30%;
+        min-width: 7rem;
+    }
+}
+
+@media (max-width:600px) {
+    .section-food {
+        width: 50%;
+        min-width: 5rem;
+    }
+}
+
+// *******************************************application*************************
+@media (min-width:576px) {
+    .app {
+        width: 100%;
+        // min-width: 70%;
+        min-height: 45rem;
+        border-radius: 0rem !important;
+    }
+
+}
+
+@media (max-width:576px) {
+    .app {
+        width: 100%;
+        // min-width: 70%;
+        min-height: 53rem;
+        border-radius: 0rem !important;
+    }
+
+}
+
+@media (min-width:600px) {
+    .app {
+        width: 95%;
+        // min-width: 70%;
+        min-height: 42rem;
+        border-radius: 0rem !important;
+    }
+}
+
+@media (min-width:960px) {
+    .app {
+        width: 90%;
+        // max-width: 78rem;
+        min-height: 38rem;
+        border-radius: 0rem 0rem 8rem !important;
+    }
+}
+
+@media (min-width:1380px) {
+    .app {
+        width: 87rem;
+        min-height: 35rem;
+    }
+}
+
+@media (min-width:1320px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1rem));
+        width: 44rem;
+        grid-row-gap: 1rem;
+        grid-column-gap: .9rem;
+    }
+
+}
+
+@media (max-width:1320px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1rem));
+        width: 34rem;
+        grid-row-gap: 1rem;
+        grid-column-gap: .1rem;
+    }
+
+}
+
+@media (max-width:1250px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1rem));
+        width: 24rem;
+        grid-row-gap: 1rem;
+        grid-column-gap: .1rem;
+    }
+
+}
+
+@media (max-width:1000px) {
+    
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1rem));
+        width: 14rem;
+        grid-row-gap: 1rem;
+        grid-column-gap: .1rem;
+    }
+
+}
+
+// *******************************work*****************************
+@media (min-width:576px) {
+    .work {
+        width: 100%;
+    }
+}
+@media (min-width:350px) {
+    .work {
+        min-height: 50rem;
+    }
+}
+
+@media (max-width:600px) {
+    .work {
+        width: 95%;
+    }
+}
+
+@media (min-width:960px) {
+    .work {
+        width: 90%;
+    }
+}
+
+@media (max-width:1360px) {
+    .work {
+        width: 90%;
+        min-height: 23rem;
+    }
+}
+
+@media (min-width:1360px) {
+    .work {
+        width: 87rem;
+        height: 23rem;
+    }
+}
+
+// ************************cities************************
+
+@media (min-width:1280px) {
+    .shahr {
+        width: 8%;
+        min-width: 6rem;
+    }
+    .footer{
+        top: 31rem;
+    }
+}
+
+@media (max-width:1280px) {
+    .shahr {
+        width: 15%;
+        min-width: 7rem;
+    }
+    .footer{
+        top: 51rem;
+    }
+}
+
+@media (max-width:960px) {
+    .shahr {
+        width: 21%;
+        min-width: 8rem;
+    }
+    .footer{
+        top: 71rem;
+    }
+}
+
+@media (max-width:600px) {
+    .shahr {
+        width: 27%;
+        min-width: 10rem;
+    }
+    .footer{
+        top: 91rem;
+    }
+}
+
+

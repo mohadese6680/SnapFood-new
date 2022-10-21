@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snapfood-new</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ***********************************header********************************** -->
+    <header class=" header  position-relative mt-5 ">
+        <!-- <div class="row"> -->
+        <!-- **********************************navbar******************************* -->
+        <nav class="header-navbar navbar position-relative navbar-expand-lg ">
+            <div class="header-navbar-logo ">
+                <img src="img/logosnapfood-removebg-preview.png" class="navbar-logo-item navbar-brand img-fluid"
+                    alt="لوگوی اسنپ فود" width="370rem" height="180rem">
+            </div>
+            <button class="navbar-toggler respon" data-toggle="collapse" data-target="#navmenu">
+                <span class="navbar-icon">
+                    <i class="fas fa-user-alt "></i>
+                </span>
+            </button>
+            <div class="header-navbar-left ms-5 d-none d-lg-block">
+                <ul class="navbar-nav list-unstyled">
+                    <li class="nav-item list-inline-item">
+                        <a href="index2.html"
+                            class=" header-navbar-left-first  position-relative d-inline-block nav-link">
+                            <i class="header-navbar-left-first-icon position-absolute fas fa-store me-3"></i>
+                            <button type="button" class="pe-5">ثبت نام فروشندگان </button>
+                        </a>
+                    </li>
+                    <li class="nav-item list-inline-item ms-4">
+                        <button onclick="showMenu()" type="button" class="nav-link header-navbar-left-second px-1 button-popup">
+                            <span class="span1 fw-bold">ورود</span>
+                            <span class="span2">یا</span>
+                            <span class="span1 fw-bold">عضویت</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- *****************************************header-content************************************** -->
+        <div class=" header-content position-absolute  d-flex flex-column  mt-5">
+            <!-- <div class="row"> -->
+            <div class="online-order mx-5 mt-5">
+                <p class="mx-1">سفارش آنلاین</p>
+                <div class="animation d-inline-block position-relative mx-5">
+                    <div class=" moving d-flex flex-column flex-nowrap mx-4">
+                        <p class="text-justify food item-move">غذا</p>
+                        <p class="text-justify grocery item-move">خوارو‌بار</p>
+                        <p class="text-justify bread item-move">نان</p>
+                        <p class="text-justify fruit item-move">میوه</p>
+                        <p class="text-justify coffee item-move">قهوه</p>
+                        <p class="text-justify pizza item-move">پیتزا</p>
+                        <p class="text-justify food item-move">غذا</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-justify sub-title mx-5">
+                <p>سفارش آنلاین غذا، میوه، نان، شیرینی و ...</p>
+            </div>
+            <div class="address-box d-inline-block position-relative mt-3 mx-5 form-group">
+                <form class="form-group" action="#" target="_blank" method="post" enctype="text/plain">
+                    <i class="fas fa-map-marker-alt icon-1 position-absolute px-3 mt-3"></i>
+                    <input class=" p-3 mt-1" type="text" placeholder="ابتدا آدرستان را انتخاب کنید.">
+                    <button class="icon-2 position-absolute mt-4" type="submit">
+                        <i class="fa fa-search "></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <!-- *************************************header-image**************************************** -->
+        <div class="header-image position-absolute ">
+            <!-- <img src="img/heder.png" class="img-fluid heding-img "> -->
+        </div>
+        <!-- *************************************header-menu************************************** -->
+        <div class="header-menu position-absolute col12">
+            <div class="d-flex">
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/restooran.png" class="img-fluid">
+                        <span class="me-4">رستوران</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/soopermarket.png" class="img-fluid">
+                        <span class="me-4">سوپرمارکت</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/kafe.png" class="img-fluid">
+                        <span class="me-4">کافه</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/shirini.png" class="img-fluid">
+                        <span class="me-4">شیرینی</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/nanvaee.png" class="img-fluid">
+                        <span class="me-4">نانوایی</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/mive.png" class="img-fluid">
+                        <span class="me-4">میوه</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/protein.png" class="img-fluid">
+                        <span class="me-4">پروتئین</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/abmive.png" class="img-fluid">
+                        <span class="me-4">آبمیوه بستنی</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/ajil.png" class="img-fluid">
+                        <span class="me-4">آجیل</span>
+                    </div>
+                </a>
+                <a class="item-menu" href="#" target="_blank">
+                    <div class="d-flex flex-column ghaza">
+                        <img src="img/sayer.png" class="img-fluid">
+                        <span class="me-4">سایر</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- ***************************************************main***************************************** -->
+    <main class="main">
+        <!-- ***************************************categories****************************************** -->
+        <section class="categories mt-5">
+            <p class="text-justify categories-title  mb-5">دسته بندی ها</p>
+            <div class="categories-types container ">
+                <div class="row   ">
+                    <div class=" section-food col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="ایرانی">
+                            <div class="food-types position-relative">
+                                <img src="img/irani.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex ">
+                                    <p class="text-justify mx-2 mt-1">ایرانی</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="  section-food col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="فست فود">
+                            <div class=" food-types position-relative">
+                                <img src="img/fastfood.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">فست فود</p>
+                                    <i class="mx-1 triangle  fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="کباب">
+                            <div class="food-types position-relative">
+                                <img src="img/kabab.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">کباب</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="پیتزا">
+                            <div class="food-types position-relative">
+                                <img src="img/pitza.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">پیتزا</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="  section-food   col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="برگر">
+                            <div class="food-types position-relative">
+                                <img src="img/berger.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">برگر</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="ساندویچ">
+                            <div class="food-types position-relative">
+                                <img src="img/sandowich.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">ساندویچ</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="سوخاری">
+                            <div class="food-types position-relative">
+                                <img src="img/sokhari.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">سوخاری</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="پاستا">
+                            <div class="food-types position-relative">
+                                <img src="img/pasta.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">پاستا</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="سالاد">
+                            <div class="food-types position-relative">
+                                <img src="img/salad.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">سالاد</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="دریایی">
+                            <div class="food-types position-relative">
+                                <img src="img/daryayi.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">دریایی</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="بین الملل">
+                            <div class="food-types position-relative">
+                                <img src="img/beynalmelal.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-1 mt-1">بین الملل</p>
+                                    <i class="px-2 triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" section-food  col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <a class=" section-food-link" href="#" title="گیلانی">
+                            <div class="food-types position-relative">
+                                <img src="img/gilani.jpg" class="img-fluid">
+                                <div class="food-name position-absolute d-flex">
+                                    <p class="text-justify mx-2 mt-1">گیلانی</p>
+                                    <i class="triangle fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- **************************************************application************************************ -->
+        <section class="app position-relative mb-5 ">
+            <div class="application container d-flex flex-column  mx-5 ">
+                <div class="row">
+                    <div class="app-description position-absolute col-xl-6 col-lg-7 col-md-11 col-sm-11 col-9">
+                        <h2 class="mb-5 mt-5">اپلیکیشن اسنپ‌فود</h2>
+                        <p class="text-justify mb-5  ">با اپلیکیشن اسنپ‌فود به راحتی و با چند کلیک ساده می‌توانید
+                            رستوران‌ها،
+                            کافه‌ها،
+                            شیرینی‌فروشی‌ها و سوپرمارکت‌های نزدیک خودتان را جست‌وجو کرده و از تجربه سفارش آسان از
+                            اسنپ‌فود لذت ببرید.</p>
+                        <h6 class="text-justify mb-3">برای دریافت لینک دانلود اپلیکیشن، شماره موبایل خود را وارد کنید.
+                        </h6>
+                        <div class="tel-box position-relative mb-5">
+                            <form>
+                                <input type="tel" placeholder="*********09">
+                                <button class="px-3 position-absolute" type="submit">دریافت لینک</button>
+                            </form>
+                        </div>
+                        <div class="softwer grid-container">
+                            <a href="#"><img src="img/googleplay.png" class="img-fluid "></a>
+                            <a href="#"><img src="img/bazar.png" class="img-fluid "></a>
+                            <a href="#"><img src="img/sibapp.jpg" class="img-fluid "></a>
+                            <a href="#"><img src="img/iapps.png" class="img-fluid "></a>
+                        </div>
+                    </div>
+                    <div class="phone  position-absolute d-none  d-lg-block">
+                        <!-- <img src="img/app.png" class="img-fluid"> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- *************************************************work*********************************************  -->
+        <section class="work position-relative">
+            <div class="container d-flex flex-column">
+                <div class="row">
+                    <div class="work-text position-absolute  col-xl-6 col-lg-7 col-md-11 col-sm-11">
+                        <p class="text-justify my-5 p-title">صاحب کسب و کار هستید؟</p>
+                        <p class="text-justify mb-5 p-discription">با اسنپ فود کسب و کارتان را آنلاین کنید و فروشتان را
+                            افزایش دهید.
+                        </p>
+                        <a target="_blank" href="#">
+                            <button>
+                                <i class="header-navbar-left-first-icon fas fa-store"></i>
+                                <span>ثبت نام فروشندگان</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="shop position-absolute  d-none  d-lg-block">
+                        <!-- <img src="img/kasbokar.png" class="img-fluid"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr class="mt-5 hr position-relative">
+    <!-- *********************************************cities****************************************************** -->
+    <section class="cities position-relative pb-5">
+        <h2 class="text-justify mx-4 mt-3">اسنپ‌فود در شهرهای ایران</h2>
+        <div class="row">
+
+
+            <div class="cities-name position-absolute me-4">
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قزوین</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اردبیل</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">گرگان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ساری</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">بوشهر</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمانشاه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">همدان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قزوین</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اردبیل</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">گرگان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ساری</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">بوشهر</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمانشاه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">همدان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قزوین</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اردبیل</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">گرگان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ساری</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">بوشهر</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمانشاه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">همدان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قزوین</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اردبیل</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">گرگان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ساری</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">بوشهر</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمانشاه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">همدان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تهران</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">مشهد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اصفهان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرج</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">شیراز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">تبریز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قم</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اهواز</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">کرمان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">رشت</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+
+                <div class="shahr  ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ارومیه</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">قزوین</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">اردبیل</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">گرگان</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">ساری</p>
+                    </a>
+                </div>
+
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">بوشهر</p>
+                    </a>
+                </div>
+                <div class="shahr ">
+                    <a href="#" class="shahr-link">
+                        <p class="shahr-text">یزد</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *****************************************************footer**************************************** -->
+    <footer class="footer container-fluid position-relative p-5">
+        <div class="row footer-parts">
+            <!-- *************************************part1***************************************** -->
+
+            <div class="part-1 col-12 col-md-12 col-lg-6 col-xl-5 d-flex flex-column ">
+                <div class="logo-foot d-flex justify-content-start">
+                    <a href="#" class="mx-2">
+                        <img src="img/logosnapfood-removebg-preview.png" alt="logo" class="img-fluid" />
+                    </a>
+
+                    <div class="snapfood-footer">
+                        <p class="fs-5 snapfood">اسنپ‌فود</p>
+                        <p class="zoodfood mt-2">تجربه سفارش غذا، از زودفود تا اسنپ‌فود</p>
+                    </div>
+                </div>
+
+                <div class="sub-logo d-flex justify-content-start justify-content-lg-center mt-2 flex-wrap ms-5">
+
+                    <div class="container d-flex flex-row-reverse social-network">
+                        <div class="social-btn ">
+                            <a href="#" target="_blank">
+                                <button>
+                                    <i class="fab fa-facebook-f "></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="social-btn">
+                            <a href="#" target="_blank">
+                                <button>
+                                    <i class="fab fa-instagram "></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="social-btn">
+                            <a href="#" target="_blank">
+                                <button>
+                                    <i class="fab fa-linkedin-in "></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="social-btn">
+                            <a href="#" target="_blank">
+                                <button>
+                                    <i class="fab fa-telegram-plane "></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="social-btn">
+                            <a href="#" target="_blank">
+                                <button>
+                                    <i class="fab fa-twitter "></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div
+                class="part-2 col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 d-flex flex-column align-items-start p-3 my-4 lh-lg">
+                <div>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">درباره اسنپ‌فود</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">وبلاگ</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">قوانین سایت</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">حریم خصوصی</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">ثبت نام فروشندگان</p>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="part-3 col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 d-flex flex-column align-items-start p-3 mt-4">
+                <div>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">تماس با اسنپ‌فود</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">پرسش‌های متداول</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">ثبت شکایات</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p class="text-justify">اپلیکیشن موبایل</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="part-4 col-12 col-md-4 col-lg-6 col-xl-3  d-flex justify-content-end ">
+                <img src="../img/logo-tejarat.png" alt="logo" class="ms-5" />
+                <img src="../img/logo-etehadye.png" alt="logo" class="mx-2" />
+            </div>
+        </div>
+    </footer>
+    <!-- **************************************popup************************************** -->
+    <div class="container-fluid popup-div position-absolute bottom-0 start-0 position-relative">
+        <form action="#" class="popup-box bg-white position-absolute top-50 start-50 rounded-4 p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <span class="material-icons fs-3 fw-lighter popup-close ">
+                    close
+                </span>
+                <img src="img/logosnapfood-removebg-preview.png" alt="logo" width="260rem" height="120rem" />
+            </div>
+
+            <div class="vorood">
+                <span class="fw-bold fs-3">ورود</span>
+                <span class="fs-3">یا</span> <span class="fw-bold fs-3">عضویت</span>
+            </div>
+
+            <div class="d-flex flex-column justify-content-start mt-4">
+                <p class="me-2 p-tel-1">شماره تلفن‌همراه</p>
+                <input type="text" pattern="[0]{1}[9]{1}[0-9]{9}" class="border border-1 rounded-3 p-2" />
+                <p class="fw-lighter opacity-75 me-2 p-tel-2">شماره با ۰۹ شروع می‌شود</p>
+            </div>
+
+            <div>
+                <button type="submit" class="w-100 fs-5 popup-buttom border-0 p-2 fw-bold rounded-3">
+                    ادامه
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let button = document.querySelector(".button-popup");
+        let pop = document.querySelector(".popup-div");
+  
+
+        function showMenu() {
+          pop.classList.toggle("opener");
+        }
+  
+        let buton = document.querySelector(".popup-close");
+        let popup = document.querySelector(".popup-div");
+  
+        buton.onclick = closeMenu;
+        function closeMenu(){
+          popup.classList.toggle("closer");
+        }
+      </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

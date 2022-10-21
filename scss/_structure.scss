@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url("/font/sans/Sans\ a4fran3.ttf");
+}
+
+$magenta: #FF00A6;
+$main-text-gray: #3A3D42;
+$first-text-gray: #53565C;
+$second-text-gray: #A6AAAD;
+$background-gray-light:#F9FAFB;
+$background-gray:#EBEDF0;
+
+
+
+* {
+    font-family: 'IRANSans';
+    margin: auto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@mixin bttn ($fontsize,$fontweight) {
+    color: #ffffff;
+    background-color: $magenta;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all 150ms ease-out;
+    border: .1rem solid $magenta;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+@mixin text($fontsize,$fontweight) {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    font-weight: $fontweight;
+    font-size: $fontsize;
+}

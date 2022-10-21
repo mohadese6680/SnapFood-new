@@ -1,0 +1,655 @@
+// **********************************header****************************
+.header {
+    background-color: $background-gray-light;
+    box-sizing: border-box;
+    border-radius: 0rem 0rem 6rem;
+    width: 88rem;
+    height: 48rem;
+
+    // ***************************************header-navbar********************************
+    &-navbar {
+        .respon {
+            border: none;
+        }
+
+        &-logo {
+            margin-top: -2rem;
+            margin-right: -3rem;
+        }
+
+        &-left {
+            &-first {
+                font-size: .875rem;
+                opacity: .9;
+                button {
+                    border: none;
+                    background-color: $background-gray-light;
+                }
+
+                &-icon {
+                    color: black;
+                    font-size: 1.3rem;
+                    opacity: .8;
+                
+                }
+            }
+
+            &-second {
+                @include bttn(1rem, 700);
+
+                &:hover {
+                    color: #ffffff;
+                }
+
+            }
+        }
+    }
+
+    // *************************************hrader-image***************************    
+    &-image {
+        z-index: 1;
+        background-image: url(../img/heder.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 85%;
+        left: 0rem;
+        top: 7.2rem;
+        width: 50%;
+        background-position: 100%;
+    }
+
+    // ****************************************header-content********************************
+    &-content {
+        top: 11rem;
+
+        .online-order p {
+            @include text(2.5rem, 600);
+            opacity: .88;
+        }
+
+        .animation {
+            overflow: hidden;
+            left: -12.5rem;
+            top: -3.3rem;
+
+            .moving {
+                height: 3.4rem;
+
+                .item-move {
+                    @include text(2.5rem, 700);
+                    color: $magenta;
+                    animation: item-show 4s cubic-bezier(0.64, 0.57, 0.67, 1.53) 0s infinite normal both;
+                }
+            }
+
+            @-webkit-keyframes item-show {
+                0% {
+                    -webkit-transform: translatey(-60px);
+                }
+
+                20% {
+                    -webkit-transform: translatey(-120px);
+                }
+
+                40% {
+                    -webkit-transform: translatey(-180px);
+                }
+
+                60% {
+                    -webkit-transform: translatey(-240px);
+                }
+
+                80% {
+                    -webkit-transform: translatey(-300px);
+                }
+
+                100% {
+                    -webkit-transform: translatey(-360px);
+                }
+            }
+
+            @keyframes item-show {
+                0% {
+                    transform: translatey(-60px);
+                }
+
+                20% {
+                    transform: translatey(-120px);
+                }
+
+                40% {
+                    transform: translatey(-180px);
+                }
+
+                60% {
+                    transform: translatey(-240px);
+                }
+
+                80% {
+                    transform: translatey(-300px);
+                }
+
+                100% {
+                    transform: translatey(-360px);
+                }
+            }
+        }
+
+        .sub-title {
+            margin-right: -11rem;
+            margin-top: -3rem;
+        }
+
+        .address-box {
+            z-index: 100;
+
+            .icon-1 {
+                color: $second-text-gray;
+                font-size: 23px;
+                z-index: 5;
+            }
+
+            .icon-2 {
+                @include bttn(1.125rem, 700);
+                right: 87.8%;
+                top: -.9rem;
+                width: 3rem;
+                border-radius: 50%;
+                padding: .5rem;
+                border: 0.09375rem solid rgba(255, 0, 166, 0.06);
+                box-shadow: rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.2) 0px 4px 16px -8px;
+
+                @media (min-width:350px) {
+                    margin-right: -9%;
+                }
+
+                @media (max-width:404px) {
+                    margin-right: -6%;
+                }
+
+                @media (min-width:967px) {
+                    margin-right: -1%;
+                }
+            }
+
+            input {
+                width: 27rem;
+                box-sizing: border-box;
+                margin-top: -2rem;
+                height: 3.5rem;
+                background-color: rgb(255, 255, 255);
+                border: 0.0625rem solid rgba(58, 61, 66, 0.12);
+                border-radius: 5rem;
+                box-shadow: rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.2) 0px 4px 16px -8px;
+
+                &::placeholder {
+                    padding-right: 2rem;
+                    font-size: 90%;
+                }
+            }
+        }
+    }
+
+    // **************************************Header-menu*******************************
+    &-menu {
+        z-index: 18;
+        top: 36rem;
+        right: 2.5rem;
+        width: 95%;
+        padding-left: 2rem;
+        height: 8.2rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(2.5rem);
+        border-radius: 1.5rem;
+
+        @media (min-width:350px) {
+            margin-right: -1rem;
+        }
+
+        span {
+            @include text(.75rem, 400);
+            color: rgb(83, 86, 92);
+        }
+
+        .item-menu {
+            margin-top: 2rem;
+
+            .ghaza {
+                min-width: 5.5rem;
+            }
+        }
+
+        img {
+            width: 2.6rem;
+            margin-bottom: 1.1rem;
+        }
+    }
+}
+
+// ********************************************main************************************
+.main {
+
+    // ***************************************categories******************************************
+    .categories {
+
+        &-title {
+            @include text(1rem, 700);
+            margin-right: 7rem;
+            margin-top: 5rem;
+
+            @media (min-width:350px) {
+                margin-right: 1.4rem;
+            }
+
+            @media (min-width:900px) {
+                margin-right: 9.4rem;
+            }
+        }
+
+        .section-food {
+            &-link {
+                background-color: transparent;
+            }
+
+            .food-types {
+                height: 7.3375rem;
+                padding: .1875rem;
+                margin-bottom: 1.5rem;
+                border-radius: .5rem .5rem;
+                box-shadow: rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.3) 0px 8px 32px -16px;
+                cursor: pointer;
+                transition: all 200ms ease-in-out 0s;
+                left: rem;
+
+                .food-name {
+                    background-color: rgb(255, 255, 255);
+                    width: 6rem;
+                    height: 2rem;
+                    right: .2rem;
+                    top: 5.2rem;
+                    z-index: 100;
+                    border-radius: .5rem 0rem;
+                    transition: all 200ms ease-in-out 0s;
+                    box-sizing: border-box;
+
+                    &:hover {
+                        .triangle {
+                            transform: translatex(-3px)
+                        }
+                    }
+
+                    p {
+                        @include text(.85rem, 400);
+                        display: inline-block;
+                        color: rgb(58, 61, 66);
+                        margin-left: 0.8rem;
+                    }
+
+                    .triangle {
+                        color: $magenta;
+                        transition: .5s;
+                    }
+
+                }
+
+                img {
+                    width: 100%;
+                    height: 7rem;
+                    object-fit: cover;
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: .75rem;
+                }
+            }
+        }
+    }
+
+    //**************************************************application************************************
+    .app {
+        margin-top: 12rem;
+        background-color: $background-gray;
+
+        &-description {
+            h2 {
+                font-weight: 700;
+                opacity: .84;
+
+                @media (min-width:350px) {
+                    margin-right: -1rem;
+                }
+
+                @media (min-width:960px) {
+                    margin-right: 6rem;
+                }
+            }
+
+            p {
+                color: rgb(58, 61, 66);
+                @include text(.875rem, 400);
+                margin-right: 6rem;
+                line-height: 2rem;
+
+                @media (min-width:350px) {
+                    margin-right: -1rem;
+                }
+
+                @media (min-width:960px) {
+                    margin-right: 6rem;
+                }
+            }
+
+            h6 {
+                color: rgb(58, 61, 66);
+                @include text(.75rem, 700);
+                margin-right: 6rem;
+
+                @media (min-width:350px) {
+                    margin-right: -1rem;
+                }
+
+                @media (min-width:960px) {
+                    margin-right: 6rem;
+                }
+            }
+
+            .grid-container {
+                margin-right: 6rem;
+                display: grid;
+
+                img {
+                    width: 9rem;
+                    height: 2.5rem;
+
+                }
+            }
+
+            .tel-box {
+                @media (min-width:350px) {
+                    margin-right: -7rem;
+                }
+
+                @media (min-width:960px) {
+                    margin-right: -.1rem;
+                }
+
+                input {
+                    margin-right: 6rem;
+                    padding: 0.75rem;
+                    border: none;
+                    box-sizing: border-box;
+                    border-radius: 0.4rem;
+                    color: rgb(58, 61, 66);
+                    width: 17rem;
+                }
+
+                button {
+                    @include bttn(.8rem, 700);
+                    top: .5rem;
+                    right: 15.5rem;
+                    height: 2rem;
+
+                    @media (min-width:350px) {
+                        margin-right: -.4rem;
+                    }
+                }
+
+            }
+        }
+
+        .phone {
+            right: 63%;
+            top: -16%;
+            background-image: url(../img/app.png);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 30rem;
+        }
+    }
+
+    //*************************************************work********************************************* 
+    .work {
+        background-color: $background-gray-light;
+        top: 7rem;
+        border-radius: 2rem;
+        min-height: 25rem;
+
+        &-text {
+            top: .2rem;
+            right: 3rem;
+            opacity: .89;
+
+            @media (min-width:350px) {
+                right: 1rem;
+            }
+
+            @media (min-width:600px) {
+                right: 3rem;
+            }
+
+            .p-title {
+                @include text(2rem, 700);
+            }
+
+            .p-discription {
+                @include text(1.125rem, 400);
+            }
+
+            i {
+                color: #ffffff;
+                font-size: 18px;
+                margin-right: -1.8rem;
+                margin-top: .2rem
+            }
+
+            button {
+                @include bttn(1.125rem, 700);
+                padding: .7rem .2rem;
+                padding-right: 2rem;
+            }
+
+        }
+
+        .shop {
+            right: 66%;
+            top: -28%;
+            background-image: url(../img/kasbokar.png);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            width: 30rem;
+        }
+    }
+}
+
+.hr {
+    top: 7rem;
+}
+
+//*********************************************cities******************************************************
+.cities {
+    &-name {
+        top: 11rem;
+        box-sizing: border-box;
+        width: calc(100% + 0.5rem);
+        margin: calc(-0.25rem);
+        display: flex;
+        flex-wrap: wrap;
+
+        .shahr {
+            padding: 0.1875rem;
+
+            &-link {
+                @include text(.6rem, 400);
+                color: $second-text-gray;
+            }
+
+            &-text {
+                @include text(.625rem, 400);
+                line-height: 0.75rem;
+                display: inline-block;
+                color: rgb(166, 170, 173);
+                text-align: center;
+            }
+        }
+    }
+
+    h2 {
+        @include text(1rem, 700);
+        position: absolute;
+        top: 7rem;
+        opacity: .84;
+    }
+}
+
+//*****************************************************foter****************************************
+
+.footer {
+    width: 100%;
+    min-height: 16rem;
+    background-color: $background-gray-light;
+    padding: 3rem;
+
+    @media (min-width:350px) {
+        top: 100rem;
+    }
+
+    .part-1 {
+
+        margin-right: -12%;
+
+        .logo-foot {
+
+            img {
+                margin-top: -2rem;
+                width: 15rem;
+                height: 7rem;
+            }
+
+            .snapfood-footer {
+                margin-right: -4rem;
+                margin-top: .2rem;
+
+                .snapfood {
+                    @include text(1.125rem, 700);
+                    color: $magenta;
+                    margin-top: -.3rem;
+                }
+
+                .zoodfood {
+                    @include text(.7rem, 400);
+                }
+            }
+        }
+
+        .sub-logo {
+
+            .social-network {
+                width: 20rem;
+
+                .social-btn {
+                    button {
+                        @include bttn(1rem, 700);
+                        border-radius: 50%;
+                        background-color: #ffffff !important;
+                        color: $first-text-gray;
+                        border: 0.1rem solid rgba(58, 61, 66, 0.06);
+                        box-shadow: rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.2) 0px 4px 16px -8px;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+
+                    i {
+                        @include text(1rem, 700);
+                        margin-top: .5rem
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .part-2 {
+
+        p {
+            @include text(.75rem, 400);
+            color: $main-text-gray;
+            line-height: 2rem;
+        }
+    }
+
+    .part-3 {
+
+        p {
+            @include text(.75rem, 400);
+            color: $main-text-gray;
+            line-height: 2rem;
+        }
+    }
+
+    .part-4 {
+
+        img {
+            width: 4.5rem;
+        }
+    }
+}
+
+// ****************************popup*****************************
+.popup-div {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 10000000000;
+}
+
+.popup-box {
+    width: 30%;
+    min-width: 240px;
+    height: 320px;
+    transform: translate(-50%, -50%);
+
+    img {
+        margin-left: -6rem;
+        margin-top: -2rem;
+    }
+    .vorood{
+        margin-top: -3rem;
+    }
+    .p-tel-1,.p-tel-2{
+        font-size: .8rem;
+    }
+    .p-tel-1{
+        font-weight: 700;
+    }
+}
+
+.popup-buttom {
+    color: rgb(166, 170, 173);
+    background-color: rgb(237, 239, 240);
+    border-color: rgb(237, 239, 240);
+}
+
+
+.popup-close {
+    margin-right: -.3rem;
+    margin-top: -.1rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.popup-div {
+    visibility: hidden;
+}
+
+.popup-div.opener {
+    visibility: visible;
+
+}
+
+.popup-div.closer {
+    visibility: hidden;
+}
